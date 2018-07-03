@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>all students</title>
+</head>
+<body>
+<table border="1">
+	<th>ID</th>
+	<th> name</th>
+	<tr th:each="s:${studentList}">
+	 <td th:text="${s.id}"></td>
+	 <td th:text="${s.name}"></td>
+	</tr>
+</table>
+</body>
+</html>
